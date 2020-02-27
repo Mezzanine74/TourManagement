@@ -1,0 +1,32 @@
+
+<dx-data-grid
+#grid
+[dataSource]="dataSource"  
+[remoteOperations]="true"
+[showBorders]="true"
+[repaintChangesOnly]="false"
+[wordWrapEnabled]="true"
+(onToolbarPreparing)="onToolbarPreparing($event)">
+
+<dxi-column type="buttons">
+    <dxi-button icon="edit" hint="Edit" [onClick]="onClickEdit"></dxi-button>
+    <dxi-button icon="close" hint="Delete" [onClick]="onClickDelete"></dxi-button>        
+</dxi-column>
+
+<dxi-column dataField="description" [width]="300" ></dxi-column>
+
+<dxi-column dataField="tourId" caption="Tour" [width]="300">
+    <dxo-lookup [dataSource]="tourDataSource" valueExpr="id" displayExpr="description"></dxo-lookup>
+</dxi-column>
+
+<dxi-column dataField="aracParkId" caption="Arac Park" [width]="300">
+    <dxo-lookup [dataSource]="aracParkDataSource" valueExpr="id" displayExpr="aracPlakasi"></dxo-lookup>
+</dxi-column>
+
+<dxi-column dataField="tourMusteriPaxId" caption="Tour Musteri Pax" [width]="300">
+    <dxo-lookup [dataSource]="tourMusteriPaxDataSource" valueExpr="id" displayExpr="description"></dxo-lookup>
+</dxi-column>
+
+<dxi-column dataField="koltukNo" [width]="300" ></dxi-column>    
+
+</dx-data-grid>

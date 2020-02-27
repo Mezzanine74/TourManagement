@@ -1,0 +1,37 @@
+<div style="margin-bottom: 5px;">
+    <dx-button
+        icon="arrowleft"
+        text="Geri"
+        (onClick)="onGeriClick()">
+    </dx-button>
+</div>
+<div style="background-color: white;">
+    <dx-form #formEdit [formData]="dataSource" [colCount]="5" 
+        (onEditorEnterKey)="onEditorEnterKey($event)">
+
+        <dxi-item dataField="description">
+        </dxi-item>        
+
+        <dxi-item dataField="biletId" editorType="dxLookup" [editorOptions]="biletEditorOptions" >
+            <dxi-validation-rule type="required"></dxi-validation-rule>            
+        </dxi-item>
+
+        <dxi-item dataField="paxId" editorType="dxLookup" [editorOptions]="paxEditorOptions" >
+            <dxi-validation-rule type="required"></dxi-validation-rule>            
+        </dxi-item>        
+
+        <dxi-item dataField="paxAdedi" editorType="dxNumberBox" [editorOptions]="{showSpinButtons:true, showClearButton:true }">
+            <dxi-validation-rule type="required" ></dxi-validation-rule>
+        </dxi-item>
+        
+        <dxi-item dataField="paxInfo" >
+        </dxi-item>        
+
+        <dxi-item 
+            itemType="button"
+            horizontalAlignment="left"
+            [buttonOptions]="buttonOptionsEdit">
+        </dxi-item>
+    </dx-form>
+</div>
+

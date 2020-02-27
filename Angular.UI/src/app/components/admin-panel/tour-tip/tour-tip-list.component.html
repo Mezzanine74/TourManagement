@@ -1,0 +1,19 @@
+
+<dx-data-grid
+    #grid
+    [dataSource]="dataSource"  
+    [remoteOperations]="true"
+    [showBorders]="true"
+    [repaintChangesOnly]="false"
+    [wordWrapEnabled]="true"
+    (onToolbarPreparing)="onToolbarPreparing($event)">
+
+    <dxi-column type="buttons">
+        <dxi-button icon="edit" hint="Edit" [onClick]="onClickEdit"></dxi-button>
+        <dxi-button icon="close" hint="Delete" [onClick]="onClickDelete"></dxi-button>        
+    </dxi-column>
+
+    <dxi-column dataField="description" [width]="300" ></dxi-column>
+    <dxi-column dataField="tourAdi" [width]="300" ></dxi-column>    
+
+</dx-data-grid>

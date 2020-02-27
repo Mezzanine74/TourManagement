@@ -1,0 +1,27 @@
+
+<dx-data-grid
+#grid
+[dataSource]="dataSource"  
+[remoteOperations]="true"
+[showBorders]="true"
+[repaintChangesOnly]="false"
+[wordWrapEnabled]="true"
+(onToolbarPreparing)="onToolbarPreparing($event)">
+
+<dxi-column type="buttons">
+    <dxi-button icon="edit" hint="Edit" [onClick]="onClickEdit"></dxi-button>
+    <dxi-button icon="close" hint="Delete" [onClick]="onClickDelete"></dxi-button>        
+</dxi-column>
+
+<dxi-column dataField="description" [width]="300" ></dxi-column>
+<dxi-column dataField="biletId" caption="Bilet" [width]="300">
+    <dxo-lookup [dataSource]="biletDataSource" valueExpr="id" displayExpr="biletNo"></dxo-lookup>
+</dxi-column>
+<dxi-column dataField="paxId" caption="Pax" [width]="300">
+    <dxo-lookup [dataSource]="paxDataSource" valueExpr="id" displayExpr="paxAdi"></dxo-lookup>
+</dxi-column>
+
+<dxi-column dataField="paxAdedi" [width]="300" ></dxi-column>    
+<dxi-column dataField="paxInfo" [width]="300" ></dxi-column>    
+
+</dx-data-grid>

@@ -1,0 +1,17 @@
+C:\Users\USER\source\repos\TourManagement\TourManagement.Repository\bin\Debug\netstandard2.1\TourManagement.Repository.deps.json
+C:\Users\USER\source\repos\TourManagement\TourManagement.Repository\bin\Debug\netstandard2.1\TourManagement.Repository.dll
+C:\Users\USER\source\repos\TourManagement\TourManagement.Repository\bin\Debug\netstandard2.1\TourManagement.Repository.pdb
+C:\Users\USER\source\repos\TourManagement\TourManagement.Repository\bin\Debug\netstandard2.1\TourManagement.Common.dll
+C:\Users\USER\source\repos\TourManagement\TourManagement.Repository\bin\Debug\netstandard2.1\TourManagement.Data.dll
+C:\Users\USER\source\repos\TourManagement\TourManagement.Repository\bin\Debug\netstandard2.1\TourManagement.SharedKernel.Data.dll
+C:\Users\USER\source\repos\TourManagement\TourManagement.Repository\bin\Debug\netstandard2.1\TourManagement.SharedKernel.dll
+C:\Users\USER\source\repos\TourManagement\TourManagement.Repository\bin\Debug\netstandard2.1\TourManagement.Common.pdb
+C:\Users\USER\source\repos\TourManagement\TourManagement.Repository\bin\Debug\netstandard2.1\TourManagement.Data.pdb
+C:\Users\USER\source\repos\TourManagement\TourManagement.Repository\bin\Debug\netstandard2.1\TourManagement.SharedKernel.Data.pdb
+C:\Users\USER\source\repos\TourManagement\TourManagement.Repository\bin\Debug\netstandard2.1\TourManagement.SharedKernel.pdb
+C:\Users\USER\source\repos\TourManagement\TourManagement.Repository\obj\Debug\netstandard2.1\TourManagement.Repository.csprojAssemblyReference.cache
+C:\Users\USER\source\repos\TourManagement\TourManagement.Repository\obj\Debug\netstandard2.1\TourManagement.Repository.AssemblyInfoInputs.cache
+C:\Users\USER\source\repos\TourManagement\TourManagement.Repository\obj\Debug\netstandard2.1\TourManagement.Repository.AssemblyInfo.cs
+C:\Users\USER\source\repos\TourManagement\TourManagement.Repository\obj\Debug\netstandard2.1\TourManagement.Repository.csproj.CopyComplete
+C:\Users\USER\source\repos\TourManagement\TourManagement.Repository\obj\Debug\netstandard2.1\TourManagement.Repository.dll
+C:\Users\USER\source\repos\TourManagement\TourManagement.Repository\obj\Debug\netstandard2.1\TourManagement.Repository.pdb

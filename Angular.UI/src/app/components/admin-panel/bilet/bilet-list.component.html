@@ -1,0 +1,42 @@
+
+<dx-data-grid
+#grid
+[dataSource]="dataSource"  
+[remoteOperations]="true"
+[showBorders]="true"
+[repaintChangesOnly]="false"
+[wordWrapEnabled]="true"
+(onToolbarPreparing)="onToolbarPreparing($event)">
+
+<dxi-column type="buttons">
+    <dxi-button icon="edit" hint="Edit" [onClick]="onClickEdit"></dxi-button>
+    <dxi-button icon="close" hint="Delete" [onClick]="onClickDelete"></dxi-button>        
+</dxi-column>
+
+<dxi-column dataField="description"  ></dxi-column>
+<dxi-column dataField="biletNo"  ></dxi-column>    
+<dxi-column dataField="biletTarihi" dataType="date" format="dd/MM/yyyy"  ></dxi-column>    
+
+<dxi-column dataField="subeId" caption="Sube" >
+    <dxo-lookup [dataSource]="subeDataSource" valueExpr="id" displayExpr="subeAdi"></dxo-lookup>
+</dxi-column>
+
+<dxi-column dataField="tourId" caption="Tour" >
+    <dxo-lookup [dataSource]="tourDataSource" valueExpr="id" displayExpr="description"></dxo-lookup>
+</dxi-column>
+
+<dxi-column dataField="musteriId" caption="Musteri" >
+    <dxo-lookup [dataSource]="musteriDataSource" valueExpr="id" displayExpr="musteriAdiSoyadi"></dxo-lookup>
+</dxi-column>
+
+<dxi-column dataField="servisIstiyorMu"  ></dxi-column>    
+
+<dxi-column dataField="paid"  ></dxi-column>    
+
+<dxi-column dataField="total"  ></dxi-column>    
+
+<dxi-column dataField="currencyId" caption="Kuru" >
+    <dxo-lookup [dataSource]="currencyDataSource" valueExpr="id" displayExpr="kurAdi"></dxo-lookup>
+</dxi-column>
+
+</dx-data-grid>

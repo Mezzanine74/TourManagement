@@ -1,0 +1,8 @@
+C:\Users\USER\source\repos\TourManagement\TourManagement.SharedKernel\bin\Debug\netstandard2.1\TourManagement.SharedKernel.deps.json
+C:\Users\USER\source\repos\TourManagement\TourManagement.SharedKernel\bin\Debug\netstandard2.1\TourManagement.SharedKernel.dll
+C:\Users\USER\source\repos\TourManagement\TourManagement.SharedKernel\obj\Debug\netstandard2.1\TourManagement.SharedKernel.AssemblyInfoInputs.cache
+C:\Users\USER\source\repos\TourManagement\TourManagement.SharedKernel\obj\Debug\netstandard2.1\TourManagement.SharedKernel.AssemblyInfo.cs
+C:\Users\USER\source\repos\TourManagement\TourManagement.SharedKernel\bin\Debug\netstandard2.1\TourManagement.SharedKernel.pdb
+C:\Users\USER\source\repos\TourManagement\TourManagement.SharedKernel\obj\Debug\netstandard2.1\TourManagement.SharedKernel.dll
+C:\Users\USER\source\repos\TourManagement\TourManagement.SharedKernel\obj\Debug\netstandard2.1\TourManagement.SharedKernel.pdb
+C:\Users\USER\source\repos\TourManagement\TourManagement.SharedKernel\obj\Debug\netstandard2.1\TourManagement.SharedKernel.csprojAssemblyReference.cache

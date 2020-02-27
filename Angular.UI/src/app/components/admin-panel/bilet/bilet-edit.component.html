@@ -1,0 +1,50 @@
+<div style="margin-bottom: 5px;">
+    <dx-button
+        icon="arrowleft"
+        text="Geri"
+        (onClick)="onGeriClick()">
+    </dx-button>
+</div>
+<div style="background-color: white;">
+    <dx-form #formEdit [formData]="dataSource" [colCount]="5" 
+        (onEditorEnterKey)="onEditorEnterKey($event)">
+
+        <dxi-item dataField="description">
+        </dxi-item>        
+
+        <dxi-item dataField="biletNo">
+            <dxi-validation-rule type="required"></dxi-validation-rule>
+        </dxi-item>                    
+
+        <dxi-item dataField="biletTarihi" editorType="dxDateBox" [editorOptions]="{displayFormat: 'dd/MM/yyyy'}">
+            <dxi-validation-rule type="required"></dxi-validation-rule>
+        </dxi-item>                    
+
+        <dxi-item dataField="subeId" editorType="dxLookup" [editorOptions]="subeEditorOptions" >
+            <dxi-validation-rule type="required"></dxi-validation-rule>            
+        </dxi-item>
+
+        <dxi-item dataField="tourId" editorType="dxLookup" [editorOptions]="tourEditorOptions" >
+            <dxi-validation-rule type="required"></dxi-validation-rule>            
+        </dxi-item>        
+
+        <dxi-item dataField="musteriId" editorType="dxLookup" [editorOptions]="musteriEditorOptions" >
+            <dxi-validation-rule type="required"></dxi-validation-rule>            
+        </dxi-item>        
+
+        <dxi-item dataField="servisIstiyorMu" editorType="dxCheckBox" ></dxi-item>
+        <dxi-item dataField="paid" editorType="dxNumberBox" [editorOptions]="{showSpinButtons:true, showClearButton:true }"></dxi-item>
+        <dxi-item dataField="total" editorType="dxNumberBox" [editorOptions]="{showSpinButtons:true, showClearButton:true }"></dxi-item>
+
+        <dxi-item dataField="currencyId" editorType="dxLookup" [editorOptions]="currencyEditorOptions" >
+            <dxi-validation-rule type="required"></dxi-validation-rule>            
+        </dxi-item>                
+
+        <dxi-item 
+            itemType="button"
+            horizontalAlignment="left"
+            [buttonOptions]="buttonOptionsEdit">
+        </dxi-item>
+    </dx-form>
+</div>
+

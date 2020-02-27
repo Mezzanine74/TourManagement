@@ -1,0 +1,28 @@
+
+<dx-data-grid
+#grid
+[dataSource]="dataSource"  
+[remoteOperations]="true"
+[showBorders]="true"
+[repaintChangesOnly]="false"
+[wordWrapEnabled]="true"
+(onToolbarPreparing)="onToolbarPreparing($event)">
+
+<dxi-column type="buttons">
+    <dxi-button icon="edit" hint="Edit" [onClick]="onClickEdit"></dxi-button>
+    <dxi-button icon="close" hint="Delete" [onClick]="onClickDelete"></dxi-button>        
+</dxi-column>
+
+<dxi-column dataField="description" [width]="300" ></dxi-column>
+
+<dxi-column dataField="tourTipId" caption="Tour Tip" [width]="300">
+    <dxo-lookup [dataSource]="tourTipDataSource" valueExpr="id" displayExpr="tourAdi"></dxo-lookup>
+</dxi-column>
+
+<dxi-column dataField="bolgeId" caption="Bolge" [width]="300">
+    <dxo-lookup [dataSource]="bolgeDataSource" valueExpr="id" displayExpr="bolgeAdi"></dxo-lookup>
+</dxi-column>
+
+<dxi-column dataField="servisSaati" [width]="300" ></dxi-column>    
+
+</dx-data-grid>

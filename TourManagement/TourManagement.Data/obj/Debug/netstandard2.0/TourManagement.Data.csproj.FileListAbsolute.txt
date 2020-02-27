@@ -1,0 +1,8 @@
+C:\Users\USER\source\repos\TourManagement\TourManagement.Data\bin\Debug\netstandard2.0\TourManagement.Data.deps.json
+C:\Users\USER\source\repos\TourManagement\TourManagement.Data\bin\Debug\netstandard2.0\TourManagement.Data.dll
+C:\Users\USER\source\repos\TourManagement\TourManagement.Data\bin\Debug\netstandard2.0\TourManagement.Data.pdb
+C:\Users\USER\source\repos\TourManagement\TourManagement.Data\obj\Debug\netstandard2.0\TourManagement.Data.AssemblyInfoInputs.cache
+C:\Users\USER\source\repos\TourManagement\TourManagement.Data\obj\Debug\netstandard2.0\TourManagement.Data.AssemblyInfo.cs
+C:\Users\USER\source\repos\TourManagement\TourManagement.Data\obj\Debug\netstandard2.0\TourManagement.Data.dll
+C:\Users\USER\source\repos\TourManagement\TourManagement.Data\obj\Debug\netstandard2.0\TourManagement.Data.pdb
+C:\Users\USER\source\repos\TourManagement\TourManagement.Data\obj\Debug\netstandard2.0\TourManagement.Data.csprojAssemblyReference.cache

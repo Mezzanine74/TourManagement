@@ -1,0 +1,38 @@
+<div style="margin-bottom: 5px;">
+    <dx-button
+        icon="arrowleft"
+        text="Geri"
+        (onClick)="onGeriClick()">
+    </dx-button>
+</div>
+<div style="background-color: white;">
+    <dx-form #formEdit [formData]="dataSource" [colCount]="5" 
+        (onEditorEnterKey)="onEditorEnterKey($event)">
+
+        <dxi-item dataField="description">
+        </dxi-item>        
+
+        <dxi-item dataField="musteriAdiSoyadi">
+            <dxi-validation-rule type="required"></dxi-validation-rule>
+        </dxi-item>                    
+
+        <dxi-item dataField="uyrukId" editorType="dxLookup" [editorOptions]="uyrukEditorOptions" >
+            <dxi-validation-rule type="required"></dxi-validation-rule>            
+        </dxi-item>
+
+        <dxi-item dataField="otelId" editorType="dxLookup" [editorOptions]="otelEditorOptions" >
+            <dxi-validation-rule type="required"></dxi-validation-rule>            
+        </dxi-item>        
+
+        <dxi-item dataField="odaNo" >
+            <dxi-validation-rule type="required" ></dxi-validation-rule>
+        </dxi-item>
+
+        <dxi-item 
+            itemType="button"
+            horizontalAlignment="left"
+            [buttonOptions]="buttonOptionsEdit">
+        </dxi-item>
+    </dx-form>
+</div>
+
